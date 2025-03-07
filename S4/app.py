@@ -5,9 +5,9 @@ app4 = Flask(__name__)
 
 # URLs de los otros servicios
 SERVICES = {
-    "geo": "http://Host.docker.internal:5000/{}",
-    "meteo": "http://Host.docker.internal:5001/{}",
-    "demo": "http://Host.docker.internal:5002/{}"
+    "geo": "http://host.docker.internal:5000/{}",
+    "meteo": "http://host.docker.internal:5001/{}",
+    "demo": "http://host.docker.internal:5002/{}"
 }
 
 @app4.route('/<int:municipioid>/<parametro1>/<parametro2>', methods=['GET'])
